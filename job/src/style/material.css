@@ -1,0 +1,110 @@
+.preparation-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f8fafc;
+    padding: 20px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    width: 100%;
+    padding: 40px;
+    background-color: #f1f5f9;
+  }
+  
+  /* Page Title */
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0f172a;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #3b82f6;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+  }
+  
+  /* Category Box */
+  .category-box {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-left: 5px solid #3b82f6;
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Category Title */
+  .category-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fb923c;
+    font-weight: 600;
+  }
+  
+  /* Materials List */
+  .materials-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .materials-list li {
+    margin: 0;
+  }
+  
+  /* Material Links */
+  .materials-list a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2563eb;
+    background: #e0edff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .materials-list a:hover {
+    background: #2563eb;
+    color: #ffffff;
+    transform: translateY(-4px);
+  }
+  
+  /* Optional: Add a little arrow */
+  .materials-list a::after {
+    content: "→";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+  
+  .materials-list a:hover::after {
+    transform: translateY(-50%) translateX(5px);
+  }
+  

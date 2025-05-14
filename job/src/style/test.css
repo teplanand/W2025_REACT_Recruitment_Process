@@ -1,0 +1,14 @@
+.container h1{
+    font-weight: bold;
+}
+
+.timer-box {
+    background-color: #ffe0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+    text-align: center;
+    
+  }
+  

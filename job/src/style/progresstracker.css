@@ -1,0 +1,130 @@
+.progress-tracker-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.progress-tracker {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.progress-tracker:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.progress-tracker h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 0.9rem 1rem;
+  font-size: 1.05rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  color: #111827;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.button-group button.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #374151;
+}
+
+li span:first-child {
+  font-weight: 600;
+}
+
+.status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.approved {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.pending {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.scheduled {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.not-scheduled {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.final-result {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.selected {
+  color: #22c55e;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.rejected {
+  color: #ef4444;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6b7280;
+}
